@@ -1,0 +1,19 @@
+.howToBuy {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #ffffff;
+  align-items: center;
+}
+.howToBuyImgWrapper {
+  margin: 0px 7px;
+}
+
+.howToBuyImgWrapper img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+}

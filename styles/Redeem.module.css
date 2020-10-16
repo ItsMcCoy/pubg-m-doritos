@@ -1,0 +1,50 @@
+.redeem {
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.redeemWrapper button {
+  margin-left: 8px;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  width: 124px;
+  height: 48px;
+  border-radius: 7px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.78px;
+  color: #ffffff;
+}
+
+.redeemWrapper input {
+  font-family: inherit;
+  border: 0;
+  margin-left: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 360px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.redeemWrapper input:-webkit-input-placeholder {
+  color: #bbbbbb;
+  font-size: 18px;
+}
+
+.redeemWrapper input::placeholder {
+  color: #bbbbbb;
+  font-size: 18px;
+}

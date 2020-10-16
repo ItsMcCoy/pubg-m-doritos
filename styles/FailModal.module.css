@@ -1,0 +1,96 @@
+.root {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.modalContainer {
+  background: #ffffff;
+  width: 90%;
+  max-width: 1024px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  /* @include tablet-vertical {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0);
+  } */
+}
+
+.backdropContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  height: 413px;
+  align-items: center;
+  justify-content: center;
+
+  /* [data-anchor='login-to-member-icon'] {
+    top: 32px;
+  } */
+}
+
+.close {
+  right: 20px;
+  top: 16px;
+  position: absolute;
+  float: right;
+  cursor: pointer;
+  white-space: nowrap;
+  z-index: 1;
+
+  /* @include tablet-vertical {
+    top: -8px;
+    right: 0;
+  } */
+}
+
+.close img {
+  width: 34px;
+  height: 34px;
+}
+
+.tryTxt {
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.okBtn {
+  width: 312px;
+  height: 60px;
+  background-color: #000000;
+  margin-top: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 3px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
