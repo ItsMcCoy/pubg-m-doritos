@@ -41,7 +41,9 @@ export default function Home() {
                 className={styles.doritosLogo}
               />
             </div>
-            <img src="/images/banner.png" className={styles.banner} />
+            <div className={styles.banner}>
+              <img src="/images/banner.png" />
+            </div>
             <HowToBuy />
             <div className={styles.freeItemTxt}>
               ลุ้นรับฟรี! ไอเทมแบบสุ่ม ผู้ร่วมสนุกอาจได้รับตั้งแต่ 1 ถึง 10
@@ -52,37 +54,44 @@ export default function Home() {
               onRedeemSuccess={setRedeemCode}
               onOpenErrorModal={handleOpenErrorModal}
             />
-            <div className={styles.mainTxt}>
-              <div>
-                เพียงซื้อ โดริโทส รสชาติใดก็ได้ PUBG MOBILE Limited Edition ที่
-                7-Eleven, CJ Express, Family mart, Tesco Lotus Express
-                และร้านสะดวกซื้อชั้นนำทั่วประเทศ
-              </div>
-              <div className={styles.highlightTxt}>
-                แล้วกรอกรหัส 10 หลักในซองขนม
-              </div>
-              <div className={styles.dateTxt}>
-                ตั้งแต่ 5 พ.ย. 63 – 28 ก.พ. 64{" "}
+            <div className={styles.mainTxtWrapper}>
+              {" "}
+              <div className={styles.mainTxt}>
+                <div>
+                  เพียงซื้อ โดริโทส รสชาติใดก็ได้ PUBG MOBILE Limited Edition
+                  ที่ 7-Eleven, CJ Express, Family mart, Tesco Lotus Express
+                  และร้านสะดวกซื้อชั้นนำทั่วประเทศ
+                </div>
+                <div className={styles.highlightTxt}>
+                  แล้วกรอกรหัส 10 หลักในซองขนม
+                </div>
+                <div className={styles.dateTxt}>
+                  ตั้งแต่ 5 พ.ย. 63 – 28 ก.พ. 64
+                </div>
               </div>
             </div>
-            <div className={styles.note}>
-              <div className={styles.topTxt}>หมายเหตุ</div>
-              <ul>
-                <li>
-                  รหัสไอเทมโค้ดจะอยู่ในซองขนม โดริโทส ลายลิมิเตท PUBG Mobile
-                  เท่านั้น
-                </li>
-                <li>รหัสไอเทมโค้ด 1 รหัสจะสามารถแลกได้ 1 ครั้งเท่านั้น</li>
-                <li>คุณสามารถเติมไอเทมโค้ดได้ไม่จำกัดจำนวนครั้งต่อไอดี</li>
-                <li>ไอเทมโค้ดสามารถใช้ได้ถึงวันที่ 28 กุมภาพันธ์ 2564</li>
-                <li>ของรางวัลไม่สามารถจำหน่าย หรือแลกเปลี่ยนเป็นเงินสดได้</li>
-                <li>
-                  บริษัทฯ
-                  สงวนสิทธิ์ในการเปลี่ยนแปลงเงื่อนไขโดยไม่ต้องแจ้งให้ทราบล่วงหน้า{" "}
-                </li>
-              </ul>
-              กรณีมีข้อพิพาทคำตัดสินของบริษัทฯ ถือเป็นสิ้นสุด
+
+            <div className={styles.noteWrapper}>
+              <div className={styles.note}>
+                <div className={styles.topTxt}>หมายเหตุ</div>
+                <ul>
+                  <li>
+                    รหัสไอเทมโค้ดจะอยู่ในซองขนม โดริโทส ลายลิมิเตท PUBG Mobile
+                    เท่านั้น
+                  </li>
+                  <li>รหัสไอเทมโค้ด 1 รหัสจะสามารถแลกได้ 1 ครั้งเท่านั้น</li>
+                  <li>คุณสามารถเติมไอเทมโค้ดได้ไม่จำกัดจำนวนครั้งต่อไอดี</li>
+                  <li>ไอเทมโค้ดสามารถใช้ได้ถึงวันที่ 28 กุมภาพันธ์ 2564</li>
+                  <li>ของรางวัลไม่สามารถจำหน่าย หรือแลกเปลี่ยนเป็นเงินสดได้</li>
+                  <li>
+                    บริษัทฯ
+                    สงวนสิทธิ์ในการเปลี่ยนแปลงเงื่อนไขโดยไม่ต้องแจ้งให้ทราบล่วงหน้า{" "}
+                  </li>
+                </ul>
+                กรณีมีข้อพิพาทคำตัดสินของบริษัทฯ ถือเป็นสิ้นสุด
+              </div>
             </div>
+
             <div className={styles.footer}>
               <img src="/images/footer.png" />
             </div>
