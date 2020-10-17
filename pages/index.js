@@ -27,10 +27,24 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.topBg}>
-          <img src="/images/bg-top.png" width="100%" height="auto" />
+          <picture>
+            <source
+              srcSet="/images/bg-top-big.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcSet="/images/bg-top-med.png"
+              media="(min-width: 1024px)"
+            />
+            <img srcSet="/images/bg-top-small.png" width="100%" height="auto" />
+          </picture>
         </div>
         <div className={styles.bottomBg}>
-          <img src="/images/BG.png" width="100%" height="auto" />
+          <picture>
+            <source srcSet="/images/bg-big.png" media="(min-width: 1440px)" />
+            <source srcSet="/images/bg-med.png" media="(min-width: 1024px)" />
+            <img srcSet="/images/bg-small.png" width="100%" height="auto" />
+          </picture>
         </div>
         <div className={styles.mainContent}>
           <div className={styles.contentWrapper}>
@@ -55,7 +69,6 @@ export default function Home() {
               onOpenErrorModal={handleOpenErrorModal}
             />
             <div className={styles.mainTxtWrapper}>
-              {" "}
               <div className={styles.mainTxt}>
                 <div>
                   เพียงซื้อ โดริโทส รสชาติใดก็ได้ PUBG MOBILE Limited Edition
@@ -85,7 +98,7 @@ export default function Home() {
                   <li>ของรางวัลไม่สามารถจำหน่าย หรือแลกเปลี่ยนเป็นเงินสดได้</li>
                   <li>
                     บริษัทฯ
-                    สงวนสิทธิ์ในการเปลี่ยนแปลงเงื่อนไขโดยไม่ต้องแจ้งให้ทราบล่วงหน้า{" "}
+                    สงวนสิทธิ์ในการเปลี่ยนแปลงเงื่อนไขโดยไม่ต้องแจ้งให้ทราบล่วงหน้า
                   </li>
                 </ul>
                 กรณีมีข้อพิพาทคำตัดสินของบริษัทฯ ถือเป็นสิ้นสุด

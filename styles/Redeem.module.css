@@ -49,3 +49,34 @@
   color: #bbbbbb;
   font-size: 18px;
 }
+
+@media (max-width: 760px) {
+  .redeem {
+    padding-top: 14px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redeemWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redeemWrapper input {
+    margin: 8px 0;
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  .redeemWrapper button {
+    margin: 0;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+}
