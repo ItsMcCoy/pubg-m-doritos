@@ -1,8 +1,9 @@
 import axios from "axios";
 
 export const getDoritosCode = async (code) => {
+  const endpoint = process.env.serviceEndpoint;
   const response = await axios
-    .post("https://topcho.dev/api/v1/doritos/code", {
+    .post(`${endpoint}/doritos/code`, {
       doritos_code: code,
     })
     .then(function (response) {

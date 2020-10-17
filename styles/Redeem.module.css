@@ -1,12 +1,26 @@
 .redeem {
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   justify-content: center;
+}
+
+.redeem span {
+  margin-top: 16px;
+}
+
+.redeemWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .redeemWrapper button {
@@ -26,10 +40,21 @@
   cursor: pointer;
 }
 
-.redeemWrapper input {
+.redeemWrapper button:disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: #cccccc;
+  cursor: unset;
+}
+
+.recaptchaWrapper {
+  margin-left: 20px;
+}
+
+.inputWrapper input {
   font-family: inherit;
   border: 0;
   margin-left: 24px;
+  margin-bottom: 8px;
   padding: 10px;
   text-align: center;
   width: 360px;
@@ -41,12 +66,12 @@
   color: #000000;
 }
 
-.redeemWrapper input:-webkit-input-placeholder {
+.inputWrapper input:-webkit-input-placeholder {
   color: #bbbbbb;
   font-size: 18px;
 }
 
-.redeemWrapper input::placeholder {
+.inputWrapper input::placeholder {
   color: #bbbbbb;
   font-size: 18px;
 }
@@ -60,13 +85,22 @@
     align-items: center;
   }
 
+  .redeem span {
+    margin-top: 0;
+  }
+
   .redeemWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .redeemWrapper input {
+  .recaptchaWrapper {
+    margin-left: 0;
+    margin-bottom: 6px;
+  }
+
+  .inputWrapper input {
     margin: 8px 0;
     width: 100%;
     font-size: 18px;
