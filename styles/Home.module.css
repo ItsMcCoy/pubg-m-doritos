@@ -17,12 +17,13 @@
 .topBg {
   width: 100%;
   height: 100%;
+  background-color: #000000;
 }
 
 .bottomBg {
   width: 100%;
   height: 100%;
-  margin-top: -280px;
+  margin-top: -300px;
   background-color: #b51017;
 }
 
@@ -48,7 +49,7 @@
 .contentWrapper {
   width: 100%;
   height: 100%;
-  padding: 0 10rem;
+  padding: 0 8rem;
   max-width: 1440px;
   position: absolute;
   left: 50%;
@@ -63,7 +64,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .pubgLogo {
@@ -79,12 +80,13 @@
 .banner {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 26px;
+  position: relative;
 }
 
-.banner img {
-  width: 1062px;
-  height: 388px;
+.bannerImg {
+  width: 100%;
+  height: auto;
 }
 
 .freeItemTxt {
@@ -92,7 +94,7 @@
   justify-content: center;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   font-size: 28px;
   font-weight: 500;
   line-height: 1.29;
@@ -113,32 +115,33 @@
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
   color: #ffffff;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.64;
   text-align: center;
 }
 
 .highlightTxt {
   color: #e8ac18;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .dateTxt {
+  font-size: 32px;
   font-weight: 300;
   margin-top: 20px;
 }
 
 .noteWrapper {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
 .note {
   margin-top: 20px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 300;
   color: #ffffff;
 }
@@ -147,18 +150,10 @@
   padding-bottom: 16px;
 }
 
-.note ul {
-  margin: 0;
-  padding: 0;
-}
-.note li {
-  margin-left: 20px;
-}
-
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 20px;
@@ -183,11 +178,6 @@
     width: 149px;
     height: 117px;
   }
-
-  .banner img {
-    width: 867px;
-    height: 328px;
-  }
 }
 
 @media (max-width: 760px) {
@@ -196,7 +186,11 @@
   }
 
   .bottomBg {
-    margin-top: -60px;
+    margin-top: -120px;
+  }
+
+  .logoWrapper {
+    margin-top: 20px;
   }
 
   .pubgLogo {
@@ -209,13 +203,8 @@
     height: 52px;
   }
 
-  .banner img {
-    width: 414px;
-    height: 146px;
-  }
-
   .banner {
-    margin-top: 110px;
+    margin-top: 40px;
   }
 
   .freeItemTxt {
@@ -240,7 +229,7 @@
   }
 
   .highlightTxt {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .dateTxt {
