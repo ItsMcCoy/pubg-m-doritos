@@ -20,33 +20,12 @@ export default function Home() {
   const handleOpenErrorModal = () => setOpenErrorModal(true);
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>PubG - Doritos</title>
       </Head>
-
-      <main className={styles.main}>
-        <div className={styles.topBg}>
-          <picture>
-            <source
-              srcSet="/images/bg-top-big.png"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcSet="/images/bg-top-med.png"
-              media="(min-width: 1024px)"
-            />
-            <img srcSet="/images/bg-top-small.png" width="100%" height="auto" />
-          </picture>
-        </div>
-        <div className={styles.bottomBg}>
-          <picture>
-            <source srcSet="/images/bg-big.png" media="(min-width: 1440px)" />
-            <source srcSet="/images/bg-med.png" media="(min-width: 1024px)" />
-            <img srcSet="/images/bg-small.png" width="100%" height="auto" />
-          </picture>
-        </div>
-        <div className={styles.mainContent}>
+      <div className={styles.container}>
+        <main className={styles.mainContent}>
           <div className={styles.contentWrapper}>
             <div className={styles.logoWrapper}>
               <img src="/images/pubg-m-logo.png" className={styles.pubgLogo} />
@@ -108,14 +87,14 @@ export default function Home() {
               <img src="/images/footer.png" />
             </div>
           </div>
-        </div>
+        </main>
         <CodeModal
           show={openCodeModal}
           onModalClose={handleCloseCodeModal}
           code={redeemCode}
         />
         <FailModal show={openErrorModal} onModalClose={handleCloseErrorModal} />
-      </main>
-    </div>
+      </div>
+    </>
   );
 }

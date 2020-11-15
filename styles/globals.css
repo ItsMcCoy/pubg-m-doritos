@@ -69,3 +69,10 @@ a {
     font-size: 28px;
   }
 }
+
+@media (min-width: 2560px) {
+  html,
+  body {
+    font-size: 32px;
+  }
+}

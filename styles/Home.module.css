@@ -1,40 +1,17 @@
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  display: block;
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: 0;
-}
-
-.topBg {
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-}
-
-.bottomBg {
-  width: 100%;
-  height: 100%;
-  margin-top: -300px;
-  background-color: #b51017;
 }
 
 .mainContent {
   width: 100%;
   height: 100%;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
+  background-image: url("/images/bg-lg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -49,13 +26,8 @@
 .contentWrapper {
   width: 100%;
   height: 100%;
-  padding: 0 8rem;
-  max-width: 1440px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
+  padding: 2rem 8rem;
+  /* max-width: 1440px; */
 }
 
 .logoWrapper {
@@ -64,7 +36,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  /* margin-top: 2rem; */
 }
 
 .pubgLogo {
@@ -165,8 +137,12 @@
 }
 
 @media (max-width: 1024px) {
+  .mainContent {
+    background-image: url("/images/bg-md.png");
+  }
+
   .contentWrapper {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
 
   .pubgLogo {
@@ -181,16 +157,12 @@
 }
 
 @media (max-width: 760px) {
+  .mainContent {
+    background-image: url("/images/bg-sm.png");
+  }
+
   .contentWrapper {
-    padding: 0 1rem;
-  }
-
-  .bottomBg {
-    margin-top: -120px;
-  }
-
-  .logoWrapper {
-    margin-top: 20px;
+    padding: 1rem 1rem;
   }
 
   .pubgLogo {
